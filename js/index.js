@@ -2,6 +2,11 @@
 
 
 $(document).on('click', '.menu-item', function(){
+    $('.header-view').children('.open').show(1000);
+    $('.header-view').children('.close').hide(1000);
+    $('.header > .btn-con').hide(1000);
+    $('.header-view').attr('status', 'close');
+
     const type = $(this).attr("type");
     if(type == "intro"){
         window.location.href = "#about-me";
@@ -13,6 +18,11 @@ $(document).on('click', '.menu-item', function(){
 })
 
 $(document).on('click', '.btn.resume', function(){
+    $('.header-view').children('.open').show(1000);
+    $('.header-view').children('.close').hide(1000);
+    $('.header > .btn-con').hide(1000);
+    $('.header-view').attr('status', 'close');
+    
     window.location.href = "document/resume.pdf";
 })
 $(document).on('click', '.experience-view-resume', function(){
@@ -44,14 +54,14 @@ $(document).on('click', '.social-list-item', function(){
 $(document).on('click', '.header-view', function(){
     const status = $(this).attr("status");
     if(status == 'close'){
-        $(this).children('.open').show(1000);
-        $(this).children('.close').hide(1000);
+        $(this).children('.open').hide(1000);
+        $(this).children('.close').show(1000);
         $('.header > .btn-con').show(1000);
         $(this).attr('status', 'open');
 
     }else if(status == 'open'){
-        $(this).children('.open').hide(1000);
-        $(this).children('.close').show(1000);
+        $(this).children('.open').show(1000);
+        $(this).children('.close').hide(1000);
         $('.header > .btn-con').hide(1000);
         $(this).attr('status', 'close');
     }
