@@ -1,0 +1,89 @@
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+.about-me{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+    .about-me > .about-me-header{
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 1.6em;
+        color: var(--HEADER_FONT_COLOR);
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    .about-me > .about-me-description{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+        .about-me > .about-me-description > .description.text{
+            position: relative;
+            width: 60%;
+            height: auto;
+            font-size: var(--DESCRIPTION_FONT_SIZE);
+        }
+        .about-me > .about-me-description > .about-me-photo{
+            position: relative;
+            width: 40%;
+            height: auto;
+            margin-left: 60px;
+        }
+            .about-me-photo > img{
+                position: relative;
+                width: 230px;
+                height: 230px;
+                border-radius: 15px;
+                filter: grayscale(100%);
+                transition: filter 1s ease;
+            }
+            .about-me-photo > img:hover{
+                filter: grayscale(0%);
+                transition: filter 1s ease;
+            }
+        .about-me-technologies{
+            position: relative;
+            width: 70%;
+            height: auto;
+        }
+
+
+
+/* Tablet or smaller device */
+@media (max-width:961px)  { 
+    .about-me > .about-me-header{
+        text-align: center;
+    }
+    .about-me > .about-me-description{
+        flex-direction: column;
+    }
+    .about-me > .about-me-description > .description.text{
+        width: 100%;
+    }
+    .about-me > .about-me-description > .about-me-photo{
+        width: auto;
+        margin: auto;
+        margin-top: 55px;
+    }
+    .about-me > .about-me-description > .about-me-photo > img{
+        margin: auto;
+    }
+    .about-me-technologies{
+        width: 100%;
+    }
+}

@@ -1,0 +1,113 @@
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo{
+    position: relative;
+    width: 100px;
+    height: 100%;
+}
+.header > .header-view{
+    display: none;
+}
+    .header-view > span{
+        position: relative;
+        font-size: 1.4em;
+        color: var(--BTN_FONT_COLOR);
+        float: right;
+        display: none;
+    }
+.header > .btn-con{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+    .header > .btn-con > .btn{
+        padding: 10px 15px 10px 15px;
+        float: right;
+    }
+    .header > .btn-con > .menu-con{
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        right: 0px;
+        margin-right: 25px;
+    }
+        .header > .btn-con > .menu-con > .menu-item{
+            position: relative;
+            width: auto;
+            height: auto;
+            margin: auto;
+            font-size: var(--BUTTON_FONT_SIZE);
+            padding: 10px 35px 10px 35px;
+            background-color: transparent;
+            color: var(--HEADER_FONT_COLOR);
+            outline: none;
+            cursor: pointer;
+        }
+        .menu-item:after{
+            position: absolute;
+            content: '';
+            z-index: 1;
+            border-radius: 3px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.8s;
+            background: linear-gradient(180deg, transparent , var(--BTN_FONT_COLOR) 200%) no-repeat;
+        }
+        .menu-item:hover:after {
+            opacity: 1;
+        }
+
+
+
+/* Tablet or smaller device */
+@media (max-width: 600px)  { 
+    .header{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .header > .header-view{
+        position: sticky;
+        width: auto;
+        display:block;
+    }
+        .header > .header-view > span.open{
+            display:block;
+        }
+    .header > .btn-con{
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    .header > .btn-con > .btn{
+        width: 100%;
+    }
+    .header > .btn-con > .menu-con{
+        width: 100%;
+        flex-direction: column;
+    }
+    .header > .btn-con > .menu-con > .menu-item{
+        width: 100%;
+        text-align: center;
+    }
+}
+

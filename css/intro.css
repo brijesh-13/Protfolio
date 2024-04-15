@@ -1,0 +1,105 @@
+
+
+.intro{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+    .intro > .intro-header{
+        position: relative;
+        width: 100%;
+        height: auto;
+        color: var(--BTN_FONT_COLOR);
+    }
+    .intro > .intro-h1{
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 5vw;
+        font-weight: 700;
+        color: var(--HEADER_FONT_COLOR);
+    }
+    .intro > .intro-h2{
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 5vw;
+        font-weight: 700;
+        color: var(--DESCRIPTION_FONT_COLOR);
+    }
+    .intro > .intro-description{
+        position: relative;
+        width: 55%;
+        height: auto;
+    }
+    .intro > .intro-button-con{
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+        .intro > .intro-button-con > .intro-learn-more{
+            margin: auto;
+            padding: 20px 25px 20px 25px;
+            float: left;
+        }
+
+
+
+
+
+/* Tablet or smaller device */
+@media (max-width:996px)  { 
+    .intro{
+        margin-top: 20%;
+    }
+    .intro > .intro-button-con{
+        width: auto;
+        margin: auto;
+        margin-top: 3em;
+    }
+    .intro > .intro-description{
+        width: 70%;
+    }
+}
+
+
+/* smaller device */
+@media (max-width: 600px)  { 
+    .intro{
+        margin-top: 20%;
+    }
+    .intro > .intro-description{
+        width: 100%;
+    }
+    .intro > .intro-h1{
+        font-size: 1.9em;
+    }
+    .intro > .intro-h2{
+        font-size: 1.75em;
+    }
+}
+
+
+/* small device */
+@media (max-width: 400px)  { 
+    .intro{
+        margin-top: 25%;
+    }
+    .intro > .intro-header{
+        text-align: center;
+    }
+    .intro > .intro-description{
+        text-align: center;
+    }
+    .intro > .intro-h1{
+        text-align: center;
+    }
+    .intro > .intro-h2{
+        text-align: center;
+    }
+}

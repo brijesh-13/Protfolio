@@ -1,0 +1,48 @@
+
+.contact{
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 80px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+}
+    .contact > .header{
+        position: relative;
+        width: auto;
+        height: auto;
+        font-size: 4vw;
+        text-align: center;
+        color: var(--HEADER_FONT_COLOR);
+        font-weight: 600;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contact > .description{
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .contact > .btn-contact-me{
+        position: relative;
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 1.3em;
+        padding: 15px 30px 15px 30px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+
+
+/* Tablet or smaller device */
+@media (max-width:961px)  { 
+    .contact{
+        width: 100%;
+    }
+}

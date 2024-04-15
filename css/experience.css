@@ -1,0 +1,124 @@
+
+
+.experience{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    padding-top: 80px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+}
+    .experience > .header{
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: 1.6em;
+        color: var(--HEADER_FONT_COLOR);
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    .experience > .experience-con{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+        .experience-con > .experience-item{
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+            .experience-item > .time-line{
+                position: relative;
+                width: 30%;
+                height: auto;
+                padding-left: 15px;
+            }
+        .experience-item > .position-con{
+            position: relative;
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+            .position-con > .title{
+                position: relative;
+                width: 100%;
+                height: auto;
+                color: whitesmoke;
+                font-weight: bold;
+            }
+            .position-con > .description{
+                position: relative;
+                width: 100%;
+                height: auto;
+                /* font-size: 0.9em; */
+            }
+            .position-con > .technology-con{
+                position: relative;
+                width: 100%;
+                height: auto;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+                .technology-con > .technology-item{
+                    position: relative;
+                    width: auto;
+                    height: 27px;
+                    margin: 0px 0px 5px 5px;
+                    padding: 5px 15px 0px 15px;
+                    font-size: 0.85em;
+                    border-radius: var(--ITEM_BORDER_RADIUS);
+                    background-color: var(--ITEM_BACKGROUND_COLOR);
+                    color: var(--BTN_FONT_COLOR);
+                }
+
+    .experience > .experience-button-con{
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+        .experience > .experience-button-con > .experience-view-resume{
+            margin: auto;
+            padding: 20px 25px 20px 25px;
+            float: left;
+        }
+
+
+
+
+/* Tablet or smaller device */
+@media (max-width:961px)  { 
+    .experience > .header{
+        width: auto;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    .experience > .experience-button-con{
+        width: auto;
+        margin: auto;
+    }
+}
+
+/* small device */
+@media (max-width: 400px)  { 
+    .experience-con > .experience-item{
+        flex-direction: column;
+    }
+    .experience-item > .time-line{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .experience-item > .position-con{
+        width: 100%;
+    }
+}
